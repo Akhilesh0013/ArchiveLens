@@ -9,7 +9,7 @@ built on top of the extracted evidence.
 
 > **Headline result:** structured-field accuracy improved from **54.1% to 89.8%**
 > on the same 14-page human-labeled benchmark using the original evaluation
-> rubric. Under the current, stricter and reproducible project evaluator, the
+> rubric. Under the current project evaluator, the
 > corresponding progression is **61.6% to 91.2%**.
 
 The improvement came from changing the document pipeline—not from adding a larger
@@ -136,28 +136,36 @@ correct / (correct + wrong + missed)
 True-null fields are excluded from the denominator. Predictions made where gold is
 null are reported separately as hallucinations.
 
-| Pipeline | Input to extractor | Correct | Wrong | Missed | Field accuracy |
-|---|---|---:|---:|---:|---:|
-| RapidOCR detector + TrOCR + structured extractor | Reassembled line text | 181 | 60 | 53 | 61.6% |
-| Docling/RapidOCR + LangGraph agent | Full-page OCR text | 189 | 51 | 54 | 64.3% |
-| Qwen2-VL 2B + same LangGraph agent | VLM transcript | 229 | 14 | 51 | 77.9% |
-| Qwen2.5-VL 7B direct extraction + normalization | Page image | **268** | **19** | **7** | **91.2%** |
+![Three extraction pipelines on the same gold pages: accuracy improves from 64.3% to 77.9% to 91.2%, while missed values fall from 54 to 51 to 7.](images/results/pipeline-comparison.svg)
 
-The first row was rescored from the saved TrOCR predictions with the current
-evaluator. The other three rows come from published run summaries in `artifacts/`.
-The final run also produced 14 hallucinated `marriage_year` values because the
-model converted written year phrases into four-digit years where the labeling rule
-required null. Those values are disclosed separately rather than hidden inside the
-headline metric.
+The three saved runs show a **26.9 percentage-point gain** from Docling/RapidOCR
+to direct Qwen2.5-VL extraction. The smaller VLM first reduces wrong values;
+direct extraction then reduces omissions. The final run recovers **268 of 294**
+populated gold values, with 19 wrong and 7 missed.
+
+The final run also produces **14 extra numeric-year predictions** where the gold
+labels require null. These are flagged separately and excluded from headline
+accuracy; the metric does not penalize them in its denominator.
 
 The original notebook rubric produces the clean, like-for-like project headline:
 **159/294 correct (54.1%) → 264/294 correct (89.8%)**, or 105 additional correctly
 recovered fields.
 
-![Per-field accuracy for the final gold run](artifacts/agent/qwen-2.5-vl-7b/plots/color-fix/01_per_field_accuracy.png)
+![Selected field accuracy across the three pipelines, showing gains in dates and signatures, a license-number regression in Qwen2-VL, and persistent weaknesses in location and relationship fields.](images/results/selected-field-comparison.svg)
+
+The second figure keeps six informative fields: date components, license number,
+signature, location, and relationship. It includes the relationship regression
+from Qwen2-VL to Qwen2.5-VL. The complete field breakdown stays in the evaluation
+artifacts rather than crowding this overview.
 
 Detailed scoring rules, field-level results, and limitations are documented in
 [Data and evaluation](docs/DATA_AND_EVALUATION.md).
+
+[Download the two-page visual report](gold-ocr-comparison-report.pdf).
+Figures are rebuilt from saved JSON/CSV results with
+[`scripts/build_readme_figures.py`](scripts/build_readme_figures.py); no model
+inference is needed. Run it with a Python environment containing Matplotlib, then
+run it with `--pdf-only` in an environment containing ReportLab to rebuild the PDF.
 
 ## Lightweight detector experiment
 
@@ -308,6 +316,5 @@ To run the detector experiment after downloading the pinned detector listed in
 - [Dataset, schema, and evaluation](docs/DATA_AND_EVALUATION.md)
 - [Optimization experiments](docs/OPTIMIZATION.md)
 - [Gold-labeling instructions](gold/README.md)
-- [Generated comparison report](artifacts/agent/gold-ocr-comparison-report.pdf)
-
+- [Focused comparison report](gold-ocr-comparison-report.pdf)
 
