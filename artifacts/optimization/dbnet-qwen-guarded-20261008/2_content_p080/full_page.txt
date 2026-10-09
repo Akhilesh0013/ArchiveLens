@@ -1,0 +1,39 @@
+{
+  "jurisdiction_note": "GOOD ONLY IN BALTIMORE CITY",
+  "state": "MARYLAND",
+  "city": "BALTIMORE CITY",
+  "license_number": "34121",
+  "application_number": "APPLI & 5177",
+  "marriage_day": "18",
+  "marriage_month": "August",
+  "marriage_year": "1939",
+  "marriage_year_text": "Nineteen hundred and thirty nine",
+  "marriage_location": "Baltimore",
+  "groom": {
+    "full_name": "RICHARD GODMAN",
+    "residence": "BALTO MD",
+    "age": "20",
+    "color": "WHITE",
+    "nativity": "MD",
+    "occupation": "METAL WKR",
+    "marital_status": "SINGLE"
+  },
+  "bride": {
+    "full_name": "L VIRGINIA PUGH",
+    "residence": "BALTO MD",
+    "age": "18",
+    "color": "WHITE",
+    "nativity": "MD",
+    "occupation": "NONE",
+    "marital_status": "SINGLE"
+  },
+  "groom_consent_by": null,
+  "bride_consent_by": null,
+  "parents_consent_filed": "PARENTS CONSENT FILED",
+  "relationship_between_parties": null,
+  "officiant": {
+    "signature": "Augustus Hackmann",
+    "official_character": null,
+    "address": null
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "source_pdf": "1_content.pdf",
+  "source_page": 1,
+  "jurisdiction_note": null,
+  "state": null,
+  "city": null,
+  "license_number": null,
+  "application_number": null,
+  "marriage_day": null,
+  "marriage_month": null,
+  "marriage_year": null,
+  "marriage_year_text": null,
+  "marriage_location": null,
+  "groom": {
+    "full_name": null,
+    "residence": null,
+    "age": null,
+    "color": null,
+    "nativity": null,
+    "occupation": null,
+    "marital_status": null
+  },
+  "bride": {
+    "full_name": null,
+    "residence": null,
+    "age": null,
+    "color": null,
+    "nativity": null,
+    "occupation": null,
+    "marital_status": null
+  },
+  "groom_consent_by": null,
+  "bride_consent_by": null,
+  "parents_consent_filed": null,
+  "relationship_between_parties": null,
+  "officiant": {
+    "signature": null,
+    "official_character": null,
+    "address": null
+  }
+}

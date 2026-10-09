@@ -1,0 +1,15 @@
+page,source_pdf,source_page,correct,wrong,missed,hallucinated,total,accuracy
+1_content.pdf p1,1_content.pdf,1,20,0,1,1,22,0.9091
+1_content.pdf p10,1_content.pdf,10,19,1,1,1,22,0.8636
+1_content.pdf p100,1_content.pdf,100,20,1,0,1,22,0.9091
+1_content.pdf p125,1_content.pdf,125,17,4,0,1,22,0.7727
+1_content.pdf p25,1_content.pdf,25,19,2,0,1,22,0.8636
+1_content.pdf p50,1_content.pdf,50,20,0,1,1,22,0.9091
+1_content.pdf p75,1_content.pdf,75,18,2,1,1,22,0.8182
+2_content.pdf p1,2_content.pdf,1,19,2,0,1,22,0.8636
+2_content.pdf p10,2_content.pdf,10,19,1,1,1,22,0.8636
+2_content.pdf p25,2_content.pdf,25,18,3,0,1,22,0.8182
+2_content.pdf p40,2_content.pdf,40,20,1,0,1,22,0.9091
+2_content.pdf p60,2_content.pdf,60,21,0,0,1,22,0.9545
+2_content.pdf p80,2_content.pdf,80,20,0,1,1,22,0.9091
+2_content.pdf p90,2_content.pdf,90,18,2,1,1,22,0.8182

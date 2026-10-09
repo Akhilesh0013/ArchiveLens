@@ -1,0 +1,66 @@
+page,field,outcome,gold,prediction,source
+1_content.pdf p1,license_number,missed,34178,,agent
+1_content.pdf p1,application_number,missed,5221,,agent
+1_content.pdf p1,marriage_day,missed,20,,agent
+1_content.pdf p1,marriage_month,missed,Aug,,agent
+1_content.pdf p1,marriage_location,missed,Balto,,agent
+1_content.pdf p1,relationship_between_parties,missed,NONE,,agent
+1_content.pdf p10,license_number,missed,33892,,agent
+1_content.pdf p10,officiant.signature,wrong,Bert Constence,Bert Lonsley,agent
+1_content.pdf p25,license_number,missed,33760,,agent
+1_content.pdf p25,application_number,missed,4766,,agent
+1_content.pdf p25,marriage_day,missed,5,,agent
+1_content.pdf p25,marriage_month,missed,Aug,,agent
+1_content.pdf p25,marriage_location,missed,Balto,,agent
+1_content.pdf p50,license_number,missed,33799,,agent
+1_content.pdf p50,marriage_month,wrong,Aug,null,agent
+1_content.pdf p75,license_number,wrong,34179,APPLICATION # 5240,agent
+1_content.pdf p75,marriage_location,wrong,Baltimoore,Baltimore,agent
+1_content.pdf p75,relationship_between_parties,missed,NONE,,agent
+1_content.pdf p75,officiant.signature,missed,J. J. H. Pitcher,,agent
+1_content.pdf p100,license_number,missed,34207,,agent
+1_content.pdf p100,marriage_location,missed,Baltimore,,agent
+1_content.pdf p100,groom.marital_status,missed,SINGLE,,agent
+1_content.pdf p100,bride.color,wrong,COL,CULL,agent
+1_content.pdf p100,bride.marital_status,missed,SINGLE,,agent
+1_content.pdf p125,license_number,missed,33900,,agent
+1_content.pdf p125,marriage_day,wrong,10,17,agent
+1_content.pdf p125,marriage_location,wrong,Balto,"Baltimore, Maryland",agent
+1_content.pdf p125,groom.color,missed,COL,,agent
+1_content.pdf p125,groom.nativity,missed,WASHINGTON D.C.,,agent
+1_content.pdf p125,officiant.signature,missed,Rev. W. T. Coleman,,agent
+2_content.pdf p1,license_number,missed,36829,,agent
+2_content.pdf p1,marriage_month,wrong,Dec,Dec.,agent
+2_content.pdf p1,marriage_location,wrong,Balto,Balt.,agent
+2_content.pdf p1,officiant.signature,missed,G. M. Harris,,agent
+2_content.pdf p10,license_number,missed,34397,,agent
+2_content.pdf p10,relationship_between_parties,missed,NONE,,agent
+2_content.pdf p10,officiant.signature,missed,W. B. Carrington,,agent
+2_content.pdf p25,license_number,missed,33996,,agent
+2_content.pdf p25,marriage_month,missed,Aug,,agent
+2_content.pdf p25,marriage_location,wrong,Balt,13,agent
+2_content.pdf p25,officiant.signature,missed,Dennis Barron,,agent
+2_content.pdf p40,license_number,missed,34229,,agent
+2_content.pdf p40,marriage_day,missed,23,,agent
+2_content.pdf p40,marriage_month,wrong,Aug,Aug.,agent
+2_content.pdf p40,marriage_location,wrong,Balto,Clerk of the Court of Common Pleas herein indicated.,agent
+2_content.pdf p60,application_number,missed,5190,,agent
+2_content.pdf p60,marriage_month,wrong,August,Auguet,agent
+2_content.pdf p60,groom.color,missed,COL,,agent
+2_content.pdf p60,groom.marital_status,missed,SINGLE,,agent
+2_content.pdf p60,bride.color,missed,COL,,agent
+2_content.pdf p60,bride.marital_status,missed,SINGLE,,agent
+2_content.pdf p60,officiant.signature,missed,Thomas S. Tildon,,agent
+2_content.pdf p80,license_number,missed,34121,,agent
+2_content.pdf p80,application_number,missed,5177,,agent
+2_content.pdf p80,marriage_day,missed,18,,agent
+2_content.pdf p80,marriage_month,missed,August,,agent
+2_content.pdf p80,marriage_location,missed,Baltimore,,agent
+2_content.pdf p80,relationship_between_parties,missed,NONE,,agent
+2_content.pdf p90,license_number,missed,33890,,agent
+2_content.pdf p90,application_number,missed,4879,,agent
+2_content.pdf p90,marriage_day,missed,10,,agent
+2_content.pdf p90,marriage_month,missed,Aug,,agent
+2_content.pdf p90,marriage_location,missed,Balto,,agent
+2_content.pdf p90,relationship_between_parties,missed,NONE,,agent
+2_content.pdf p90,officiant.signature,wrong,A. B. Langrall,Q B Langrill,agent

@@ -1,0 +1,39 @@
+{
+  "jurisdiction_note": "GOOD ONLY IN BALTIMORE CITY",
+  "state": "MARYLAND",
+  "city": "BALTIMORE CITY",
+  "license_number": "33760",
+  "application_number": "4766",
+  "marriage_day": "5",
+  "marriage_month": "Aug",
+  "marriage_year": "1935",
+  "marriage_year_text": "Nineteen hundred and thirty five",
+  "marriage_location": "Baltimore",
+  "groom": {
+    "full_name": "JAMES P. ARTSON",
+    "residence": "BALTIMORE MD.",
+    "age": "43",
+    "color": "COL.",
+    "nativity": "PENNSLYVANIA",
+    "occupation": "LABORER",
+    "marital_status": "WIDOWER"
+  },
+  "bride": {
+    "full_name": "CATHERINE V. SMITH",
+    "residence": "BALTIMORE MD.",
+    "age": "33",
+    "color": "COL.",
+    "nativity": "MARYLAND",
+    "occupation": "NCNE",
+    "marital_status": "SINGLE"
+  },
+  "groom_consent_by": null,
+  "bride_consent_by": null,
+  "parents_consent_filed": null,
+  "relationship_between_parties": "NOT RELATED",
+  "officiant": {
+    "signature": "A W Taylor",
+    "official_character": null,
+    "address": null
+  }
+}

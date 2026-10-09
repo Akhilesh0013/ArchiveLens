@@ -1,0 +1,34 @@
+{
+  "full_page": {
+    "n_pages": 14,
+    "field_accuracy": 0.9115646258503401,
+    "correct": 268,
+    "hallucinated": 14,
+    "missed": 7,
+    "wrong": 19,
+    "failed_pages": 0,
+    "median_pipeline_seconds": 43.078103688079864,
+    "total_pipeline_seconds": 687.9540467937477,
+    "median_detector_seconds": 0.0,
+    "median_prompt_tokens": 2823.0,
+    "total_generation_tokens": 4805,
+    "max_mlx_peak_gb": 6.561211438,
+    "median_pixel_ratio": 1.0
+  },
+  "dbnet_packed": {
+    "n_pages": 14,
+    "field_accuracy": 0.8979591836734694,
+    "correct": 264,
+    "wrong": 25,
+    "hallucinated": 14,
+    "missed": 5,
+    "failed_pages": 0,
+    "median_pipeline_seconds": 46.81237864634022,
+    "total_pipeline_seconds": 660.2960560861975,
+    "median_detector_seconds": 0.8400001876289025,
+    "median_prompt_tokens": 1719.0,
+    "total_generation_tokens": 4805,
+    "max_mlx_peak_gb": 6.866064518,
+    "median_pixel_ratio": 0.5655180790750645
+  }
+}

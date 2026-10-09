@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="420" viewBox="0 0 320 420">
+  <rect width="320" height="420" fill="#f5f0e8"/>
+  <rect x="16" y="16" width="288" height="388" rx="6" fill="#fff" stroke="#8b6914" stroke-width="2"/>
+  <text x="160" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#3e2723">MARRIAGE LICENSE</text>
+  <text x="160" y="66" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">State of Maryland - Baltimore City</text>
+  <line x1="40" y1="78" x2="280" y2="78" stroke="#ddd"/>
+  <rect x="40" y="92" width="240" height="14" rx="2" fill="#eee"/>
+  <rect x="40" y="114" width="180" height="14" rx="2" fill="#eee"/>
+  <text x="48" y="124" font-family="Arial, sans-serif" font-size="8" fill="#999">License No. . . . . . .</text>
+  <text x="40" y="150" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#5c4033">Groom</text>
+  <rect x="40" y="156" width="240" height="12" rx="2" fill="#f0ebe3"/>
+  <rect x="40" y="174" width="110" height="12" rx="2" fill="#f0ebe3"/>
+  <rect x="160" y="174" width="120" height="12" rx="2" fill="#f0ebe3"/>
+  <text x="40" y="204" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#5c4033">Bride</text>
+  <rect x="40" y="210" width="240" height="12" rx="2" fill="#f0ebe3"/>
+  <rect x="40" y="228" width="110" height="12" rx="2" fill="#f0ebe3"/>
+  <rect x="160" y="228" width="120" height="12" rx="2" fill="#f0ebe3"/>
+  <text x="40" y="258" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#5c4033">Marriage date and location</text>
+  <rect x="40" y="264" width="240" height="12" rx="2" fill="#f0ebe3"/>
+  <rect x="40" y="282" width="240" height="12" rx="2" fill="#f0ebe3"/>
+  <text x="40" y="312" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#5c4033">Officiant</text>
+  <rect x="40" y="318" width="180" height="12" rx="2" fill="#f0ebe3"/>
+  <rect x="40" y="350" width="240" height="40" rx="4" fill="#faf7f2" stroke="#d4a574" stroke-dasharray="4 3"/>
+  <text x="160" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8b6914">Illustrative form - no real record data</text>
+</svg>

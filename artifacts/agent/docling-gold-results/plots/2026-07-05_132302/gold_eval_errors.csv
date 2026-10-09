@@ -1,0 +1,105 @@
+page,field,outcome,gold,prediction,source
+1_content.pdf p1,marriage_location,missed,Balto,,agent
+1_content.pdf p1,groom.nativity,wrong,TENN,TENor country),agent
+1_content.pdf p1,groom.marital_status,missed,DIVORCED,,agent
+1_content.pdf p1,bride.residence,wrong,BALTO MD,DALTO D,agent
+1_content.pdf p1,bride.age,missed,23,,agent
+1_content.pdf p1,bride.color,missed,COL,,agent
+1_content.pdf p1,bride.nativity,missed,NY,,agent
+1_content.pdf p1,bride.marital_status,missed,SINGLE,,agent
+1_content.pdf p1,relationship_between_parties,missed,NONE,,agent
+1_content.pdf p10,marriage_month,wrong,Aug,aug.,agent
+1_content.pdf p10,marriage_location,wrong,Balto,Blt,agent
+1_content.pdf p10,groom.nativity,wrong,MD,MO,agent
+1_content.pdf p10,groom.occupation,missed,CLERK,,agent
+1_content.pdf p10,relationship_between_parties,missed,NONE,,agent
+1_content.pdf p25,marriage_month,wrong,Aug,S,agent
+1_content.pdf p25,marriage_location,wrong,Balto,3,agent
+1_content.pdf p25,bride.age,missed,33,,agent
+1_content.pdf p25,bride.color,missed,COL,,agent
+1_content.pdf p50,license_number,wrong,33799,No.,agent
+1_content.pdf p50,marriage_month,wrong,Aug,a,agent
+1_content.pdf p50,bride.nativity,missed,MD,,agent
+1_content.pdf p50,officiant.signature,wrong,Nicholas Dohoney,Micholas Dohong,agent
+1_content.pdf p75,marriage_day,wrong,21,11,agent
+1_content.pdf p75,marriage_month,wrong,August,null,agent
+1_content.pdf p75,marriage_location,wrong,Baltimoore,null,agent
+1_content.pdf p75,groom.color,wrong,WHT,HL,agent
+1_content.pdf p75,bride.color,wrong,WHT,HIT,agent
+1_content.pdf p75,relationship_between_parties,missed,NONE,,agent
+1_content.pdf p75,officiant.signature,wrong,J. J. H. Pitcher,null,agent
+1_content.pdf p100,license_number,wrong,34207,No. 3,agent
+1_content.pdf p100,marriage_day,missed,21,,agent
+1_content.pdf p100,marriage_month,missed,August,,agent
+1_content.pdf p100,marriage_location,missed,Baltimore,,agent
+1_content.pdf p100,groom.marital_status,wrong,SINGLE,SINGE,agent
+1_content.pdf p100,bride.color,wrong,COL,CULL,agent
+1_content.pdf p100,officiant.signature,wrong,E. Adolf Haynes,B. Adoy Aaynes,agent
+1_content.pdf p125,marriage_day,missed,10,,agent
+1_content.pdf p125,marriage_month,missed,August,,agent
+1_content.pdf p125,marriage_location,wrong,Balto,/alt,agent
+1_content.pdf p125,groom.color,wrong,COL,NO地ty,agent
+1_content.pdf p125,groom.marital_status,wrong,SINGLE,SINGE,agent
+1_content.pdf p125,bride.full_name,missed,MARJORIE BANKS,,agent
+1_content.pdf p125,bride.nativity,wrong,NEW JERSEY,NEW,agent
+1_content.pdf p125,officiant.signature,wrong,Rev. W. T. Coleman,Per. N. I bolemaul,agent
+2_content.pdf p1,application_number,wrong,7964,APP 11064,agent
+2_content.pdf p1,marriage_day,missed,4,,agent
+2_content.pdf p1,marriage_month,missed,Dec,,agent
+2_content.pdf p1,marriage_location,wrong,Balto,Balte.,agent
+2_content.pdf p1,officiant.signature,wrong,G. M. Harris,Y.IM. OAarris,agent
+2_content.pdf p10,license_number,wrong,34397,No.,agent
+2_content.pdf p10,marriage_day,missed,20,,agent
+2_content.pdf p10,marriage_month,missed,August,,agent
+2_content.pdf p10,marriage_location,missed,Baltimore,,agent
+2_content.pdf p10,bride.nativity,missed,MD,,agent
+2_content.pdf p10,relationship_between_parties,wrong,NONE,NONR,agent
+2_content.pdf p25,license_number,missed,33996,,agent
+2_content.pdf p25,marriage_day,missed,12,,agent
+2_content.pdf p25,marriage_month,missed,Aug,,agent
+2_content.pdf p25,marriage_location,wrong,Balt,&,agent
+2_content.pdf p25,groom.nativity,wrong,S.C.,VA.,agent
+2_content.pdf p25,groom.occupation,wrong,JANITOR,NONE,agent
+2_content.pdf p25,bride.age,missed,36,,agent
+2_content.pdf p25,bride.color,missed,COL,,agent
+2_content.pdf p25,bride.nativity,missed,VA.,,agent
+2_content.pdf p25,officiant.signature,wrong,Dennis Barron,Adrey,agent
+2_content.pdf p40,marriage_month,wrong,Aug,ug,agent
+2_content.pdf p40,marriage_location,missed,Balto,,agent
+2_content.pdf p40,groom.residence,wrong,BALTIMORE MD.,BA TIMORE MO.,agent
+2_content.pdf p40,groom.occupation,missed,MACH.,,agent
+2_content.pdf p40,bride.color,wrong,WHITE,WHI TEativity,agent
+2_content.pdf p40,officiant.signature,wrong,Frederick A. Giese,Jedrik A Geie Signaturg of Officiating Clergyman,agent
+2_content.pdf p60,marriage_day,missed,18,,agent
+2_content.pdf p60,marriage_month,missed,August,,agent
+2_content.pdf p60,marriage_location,missed,Baltimore,,agent
+2_content.pdf p60,groom.residence,wrong,BALTIMORE MD,BALTIUCRE ND,agent
+2_content.pdf p60,groom.nativity,wrong,VIRGINIA,VIRGIUJAy),agent
+2_content.pdf p60,groom.occupation,missed,ATTENDANT,,agent
+2_content.pdf p60,bride.residence,wrong,BALTIMORE MD,BALTIVORE MO,agent
+2_content.pdf p60,bride.age,missed,16,,agent
+2_content.pdf p60,bride.color,missed,COL,,agent
+2_content.pdf p60,bride.nativity,missed,MARYLAND,,agent
+2_content.pdf p60,bride.marital_status,missed,SINGLE,,agent
+2_content.pdf p60,officiant.signature,missed,Thomas S. Tildon,,agent
+2_content.pdf p80,license_number,wrong,34121,No. 3412,agent
+2_content.pdf p80,application_number,wrong,5177,APPL1 & 5177,agent
+2_content.pdf p80,marriage_day,missed,18,,agent
+2_content.pdf p80,marriage_month,missed,August,,agent
+2_content.pdf p80,marriage_location,missed,Baltimore,,agent
+2_content.pdf p80,groom.residence,wrong,BALTO MD,BA TO MO,agent
+2_content.pdf p80,groom.nativity,missed,MD,,agent
+2_content.pdf p80,groom.marital_status,missed,SINGLE,,agent
+2_content.pdf p80,bride.residence,wrong,BALTO MD,BALTO WO,agent
+2_content.pdf p80,bride.color,wrong,WHITE,WHIT,agent
+2_content.pdf p80,bride.nativity,wrong,MD,WD,agent
+2_content.pdf p80,bride.occupation,wrong,NONE,BOKE,agent
+2_content.pdf p80,relationship_between_parties,missed,NONE,,agent
+2_content.pdf p90,marriage_location,wrong,Balto,alt,agent
+2_content.pdf p90,groom.color,wrong,WHT,HT,agent
+2_content.pdf p90,groom.nativity,missed,MD,,agent
+2_content.pdf p90,groom.occupation,missed,ADVERTISING,,agent
+2_content.pdf p90,bride.color,wrong,WHT,T,agent
+2_content.pdf p90,bride.nativity,missed,MD,,agent
+2_content.pdf p90,relationship_between_parties,missed,NONE,,agent
+2_content.pdf p90,officiant.signature,wrong,A. B. Langrall,O 13 Lougroll,agent

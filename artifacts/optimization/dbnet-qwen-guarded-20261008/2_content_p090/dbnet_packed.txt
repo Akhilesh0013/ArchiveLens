@@ -1,0 +1,39 @@
+{
+  "jurisdiction_note": "GOOD ONLY IN BALTIMORE CITY",
+  "state": "MARYLAND",
+  "city": "BALTIMORE CITY",
+  "license_number": "33890",
+  "application_number": "4879",
+  "marriage_day": "10",
+  "marriage_month": "Aug",
+  "marriage_year": "1939",
+  "marriage_year_text": "Nineteen hundred and thirty nine",
+  "marriage_location": "Balt",
+  "groom": {
+    "full_name": "KENNETH K. GRONBERG",
+    "residence": "BALTIMORE MD",
+    "age": "24",
+    "color": "WHT",
+    "nativity": "MD",
+    "occupation": "ADVERTISING",
+    "marital_status": "SINGLE"
+  },
+  "bride": {
+    "full_name": "AUGUSTA BELLE TEARNEY",
+    "residence": "BALTIMORE MD",
+    "age": "19",
+    "color": "WHT",
+    "nativity": "MD",
+    "occupation": "NONE",
+    "marital_status": "SINGLE"
+  },
+  "groom_consent_by": null,
+  "bride_consent_by": null,
+  "parents_consent_filed": null,
+  "relationship_between_parties": null,
+  "officiant": {
+    "signature": "Q B Langrell",
+    "official_character": null,
+    "address": null
+  }
+}

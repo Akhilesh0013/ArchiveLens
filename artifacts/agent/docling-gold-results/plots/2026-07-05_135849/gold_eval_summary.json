@@ -1,0 +1,8 @@
+{
+  "field_accuracy": 0.6428571428571429,
+  "n_pages": 14,
+  "correct": 189,
+  "wrong": 51,
+  "missed": 54,
+  "hallucinated": 0
+}

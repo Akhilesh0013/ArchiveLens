@@ -1,0 +1,41 @@
+{
+  "source_pdf": "1_content.pdf",
+  "source_page": 100,
+  "jurisdiction_note": "GOOD ONLY IN BALTIMORE CITY",
+  "state": "MARYLAND",
+  "city": "BALTIMORE CITY",
+  "license_number": "34207",
+  "application_number": "5236",
+  "marriage_day": 21,
+  "marriage_month": "August",
+  "marriage_year": null,
+  "marriage_year_text": "Nineteen hundred and thirty nine",
+  "marriage_location": "Baltimore",
+  "groom": {
+    "full_name": "JOHN E. CAMPBELL",
+    "residence": "BALTIMORE MD.",
+    "age": 22,
+    "color": "COL",
+    "nativity": "MARYLAND",
+    "occupation": "PORTER",
+    "marital_status": "SINGLE"
+  },
+  "bride": {
+    "full_name": "SARAH SHAW",
+    "residence": "BALTIMORE MD.",
+    "age": 22,
+    "color": "COL",
+    "nativity": "MARYLAND",
+    "occupation": "LAUNDRESS",
+    "marital_status": "SINGLE"
+  },
+  "groom_consent_by": null,
+  "bride_consent_by": null,
+  "parents_consent_filed": null,
+  "relationship_between_parties": "NOT RELATED",
+  "officiant": {
+    "signature": "E. Adolf Haynes",
+    "official_character": null,
+    "address": null
+  }
+}

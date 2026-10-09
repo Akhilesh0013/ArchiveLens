@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="120" viewBox="0 0 960 120">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="960" height="120" fill="#faf7f2"/>
+  <text x="480" y="22" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#3E2723">Baltimore Marriage Records - Pipeline</text>
+  <g font-family="Arial, sans-serif" font-size="12" font-weight="600">
+    <rect x="20" y="45" width="120" height="44" rx="8" fill="#E8D5B7" stroke="#8B6914"/>
+    <text x="80" y="72" text-anchor="middle" fill="#3E2723">Scanned PDFs</text>
+    <line x1="140" y1="67" x2="165" y2="67" stroke="#555" marker-end="url(#arrow)"/>
+    <rect x="170" y="45" width="120" height="44" rx="8" fill="#D4A574" stroke="#8B6914"/>
+    <text x="230" y="72" text-anchor="middle" fill="white">Docling OCR</text>
+    <line x1="290" y1="67" x2="315" y2="67" stroke="#555" marker-end="url(#arrow)"/>
+    <rect x="320" y="45" width="130" height="44" rx="8" fill="#B8860B" stroke="#8B6914"/>
+    <text x="385" y="72" text-anchor="middle" fill="white">LangGraph Agent</text>
+    <line x1="450" y1="67" x2="475" y2="67" stroke="#555" marker-end="url(#arrow)"/>
+    <rect x="480" y="45" width="100" height="44" rx="8" fill="#8B6914" stroke="#5C4033"/>
+    <text x="530" y="72" text-anchor="middle" fill="white">SQLite</text>
+    <line x1="580" y1="67" x2="605" y2="67" stroke="#555" marker-end="url(#arrow)"/>
+    <rect x="610" y="45" width="120" height="44" rx="8" fill="#5C4033" stroke="#3E2723"/>
+    <text x="670" y="72" text-anchor="middle" fill="white">Chroma RAG</text>
+    <line x1="730" y1="67" x2="755" y2="67" stroke="#555" marker-end="url(#arrow)"/>
+    <rect x="760" y="45" width="170" height="44" rx="8" fill="#3E2723" stroke="#1a1008"/>
+    <text x="845" y="72" text-anchor="middle" fill="white">Search / Q&amp;A</text>
+  </g>
+  <text x="480" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">Search reads ingested records only - no OCR re-run required</text>
+</svg>

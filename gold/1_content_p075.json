@@ -1,0 +1,41 @@
+{
+  "source_pdf": "1_content.pdf",
+  "source_page": 75,
+  "jurisdiction_note": "GOOD ONLY IN BALTIMORE CITY",
+  "state": "MARYLAND",
+  "city": "BALTIMORE CITY",
+  "license_number": "34179",
+  "application_number": "5240",
+  "marriage_day": 21,
+  "marriage_month": "August",
+  "marriage_year": null,
+  "marriage_year_text": "Nineteen hundred and thirty nine",
+  "marriage_location": "Baltimoore",
+  "groom": {
+    "full_name": "SAMUEL J. BROWN",
+    "residence": "BALTIMORE MD",
+    "age": 21,
+    "color": "WHT",
+    "nativity": "DC",
+    "occupation": "SALESMAN",
+    "marital_status": "SINGLE"
+  },
+  "bride": {
+    "full_name": "ZELDA M. RODBORD",
+    "residence": "BRONX NY",
+    "age": 20,
+    "color": "WHT",
+    "nativity": "DC",
+    "occupation": "CLERK",
+    "marital_status": "SINGLE"
+  },
+  "groom_consent_by": null,
+  "bride_consent_by": null,
+  "parents_consent_filed": null,
+  "relationship_between_parties": "NONE",
+  "officiant": {
+    "signature": "J. J. H. Pitcher",
+    "official_character": null,
+    "address": null
+  }
+}

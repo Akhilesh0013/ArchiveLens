@@ -1,0 +1,39 @@
+{
+  "jurisdiction_note": "GOOD ONLY IN BALTIMORE CITY",
+  "state": "MARYLAND",
+  "city": "BALTIMORE CITY",
+  "license_number": "34138",
+  "application_number": "5190",
+  "marriage_day": "18",
+  "marriage_month": "August",
+  "marriage_year": "1938",
+  "marriage_year_text": "Nineteen hundred and thirty eight",
+  "marriage_location": "Baltimore",
+  "groom": {
+    "full_name": "LUTHER L FORD JR",
+    "residence": "BALTIMORE MD",
+    "age": "21",
+    "color": "COL",
+    "nativity": "VIRGINIA",
+    "occupation": "ATTENDANT",
+    "marital_status": "SINGLE"
+  },
+  "bride": {
+    "full_name": "WAYVELL LOGAN",
+    "residence": "BALTIMORE MD",
+    "age": "16",
+    "color": "COL",
+    "nativity": "MARYLAND",
+    "occupation": "NONE",
+    "marital_status": "SINGLE"
+  },
+  "groom_consent_by": null,
+  "bride_consent_by": null,
+  "parents_consent_filed": "PARENTS CONSENT FILED",
+  "relationship_between_parties": "NOT RELATED",
+  "officiant": {
+    "signature": "Thomas J. Gilder",
+    "official_character": null,
+    "address": null
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "jurisdiction_note": "GOOD ONLY IN BALTIMORE CITY",
+  "state": "MARYLAND",
+  "city": "BALTIMORE CITY",
+  "license_number": "34387",
+  "application_number": "5398",
+  "marriage_day": "20",
+  "marriage_month": "August",
+  "marriage_year": "1939",
+  "marriage_year_text": "Nineteen hundred and thirty nine",
+  "marriage_location": "Baltimore",
+  "groom": {
+    "full_name": "BUCK DAVENPORT",
+    "residence": "BALTIMORE MD",
+    "age": "31",
+    "color": "COL",
+    "nativity": "VA",
+    "occupation": "LABORER",
+    "marital_status": "SINGLE"
+  },
+  "bride": {
+    "full_name": "ANNA GRAHAM",
+    "residence": "BALTIMORE MD",
+    "age": "29",
+    "color": "COL",
+    "nativity": "MD",
+    "occupation": "BEAUTICIAN",
+    "marital_status": "SINGLE"
+  },
+  "groom_consent_by": null,
+  "bride_consent_by": null,
+  "parents_consent_filed": null,
+  "relationship_between_parties": null,
+  "officiant": {
+    "signature": "W.D. Carrington",
+    "official_character": null,
+    "address": null
+  }
+}
