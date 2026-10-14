@@ -143,7 +143,7 @@ class RecordRepository:
         payload = record.model_dump(mode="json")
 
         with self._connect() as conn:
-            cur = conn.execute(
+            conn.execute(
                 """
                 INSERT INTO marriage_records (
                     upload_id, record_json, groom_name, bride_name,
@@ -179,7 +179,15 @@ class RecordRepository:
                     self._now(),
                 ),
             )
-            return int(cur.lastrowid)
+            row = conn.execute(
+                "SELECT id FROM marriage_records WHERE upload_id = ?",
+                (upload_id,),
+            ).fetchone()
+            record_id = int(row["id"])
+            from app.rag.sparse import sync_sparse_row
+
+            sync_sparse_row(conn, record_id, record)
+            return record_id
 
     def list_records(self, limit: int = 100) -> list[StoredRecord]:
         with self._connect() as conn:

@@ -130,8 +130,56 @@ def _provenance_key(doc: Document) -> tuple[str, int]:
     )
 
 
+_RRF_K = 60
+
+
+def _identifier_tokens(query: str) -> list[str]:
+    """Digit runs long enough to be a license, application number, or year."""
+    return re.findall(r"\b\d{4,}\b", query)
+
+
+def _contains_identifier(text: str, token: str) -> bool:
+    return re.search(rf"\b{re.escape(token)}\b", text) is not None
+
+
+def fuse_rankings(
+    rankings: list[list[Document]],
+    query: str,
+    k: int,
+) -> list[Document]:
+    """Reciprocal-rank fusion, with an extra boost for exact identifier hits."""
+    scores: dict[int, float] = {}
+    chosen: dict[int, Document] = {}
+    for ranking in rankings:
+        for rank, doc in enumerate(ranking):
+            record_id = int(doc.metadata["record_id"])
+            scores[record_id] = scores.get(record_id, 0.0) + 1.0 / (_RRF_K + rank + 1)
+            chosen.setdefault(record_id, doc)
+
+    for token in _identifier_tokens(query):
+        for record_id, doc in chosen.items():
+            if _contains_identifier(doc.page_content, token):
+                scores[record_id] += 1.0
+
+    ordered = sorted(scores, key=lambda record_id: scores[record_id], reverse=True)
+    docs: list[Document] = []
+    seen_ids: set[int] = set()
+    seen_pages: set[tuple[str, int]] = set()
+    for record_id in ordered:
+        doc = chosen[record_id]
+        page_key = _provenance_key(doc)
+        if record_id in seen_ids or page_key in seen_pages:
+            continue
+        seen_ids.add(record_id)
+        seen_pages.add(page_key)
+        docs.append(doc)
+        if len(docs) >= k:
+            break
+    return docs
+
+
 class MarriageRecordRetriever:
-    """Hybrid retrieval: structured SQL filters + semantic vector search."""
+    """Hybrid retrieval: structured filters + BM25 sparse search + dense vectors."""
 
     def __init__(
         self,
@@ -179,6 +227,12 @@ class MarriageRecordRetriever:
 
         return results[:limit]
 
+    def sparse_search(self, query: str, *, k: int | None = None) -> list[Document]:
+        from app.rag.sparse import sparse_search
+
+        k = k or settings.rag_top_k
+        return sparse_search(self.repository, query, corpus=self.corpus, k=k)
+
     def semantic_search(self, query: str, *, k: int | None = None) -> list[Document]:
         k = k or settings.rag_top_k
         if index_count_safe(self.corpus) == 0:
@@ -187,29 +241,15 @@ class MarriageRecordRetriever:
 
     def hybrid_search(self, query: str, *, k: int | None = None) -> list[Document]:
         k = k or settings.rag_top_k
-        structured = self.structured_search(query, limit=k)
+        structured = [
+            _stored_to_doc(item) for item in self.structured_search(query, limit=k)
+        ]
+        sparse = self.sparse_search(query, k=k)
         semantic = self.semantic_search(query, k=k)
-
-        docs: list[Document] = []
-        seen_ids: set[int] = set()
-        seen_pages: set[tuple[str, int]] = set()
-
-        def add_doc(doc: Document) -> None:
-            record_id = int(doc.metadata["record_id"])
-            page_key = _provenance_key(doc)
-            if record_id in seen_ids or page_key in seen_pages:
-                return
-            seen_ids.add(record_id)
-            seen_pages.add(page_key)
-            docs.append(doc)
-
-        for item in structured:
-            add_doc(_stored_to_doc(item))
-
-        for doc in semantic:
-            add_doc(doc)
-
-        return docs[:k]
+        rankings = [docs for docs in (structured, sparse, semantic) if docs]
+        if not rankings:
+            return []
+        return fuse_rankings(rankings, query, k)
 
 
 def _stored_to_doc(item: StoredRecord) -> Document:

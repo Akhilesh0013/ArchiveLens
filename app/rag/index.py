@@ -34,6 +34,9 @@ def rebuild_index(
         preferred_engine=corpus_preferred_engine(name),
     )
 
+    from app.rag.sparse import rebuild_sparse_index
+
+    rebuild_sparse_index(repo, corpus=name, records=records)
     if not records:
         return 0
 
